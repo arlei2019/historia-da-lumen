@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma história interativa sobre Matilda, uma heroína da zona sul de São Paulo que enfrenta seus medos e descobre seu verdadeiro poder.">
+    <meta name="keywords" content="Lumen, Heroína, Zona Sul, São Paulo, coragem, medo, autoconhecimento, superpoderes, história interativa">
+    <meta name="author" content="Árlei Santos, Marcos Santos, Grazielly Lacerda, Kauanny Santos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Lumen - A Heroína da Zona Sul">
+    <meta property="og:description" content="Uma história sobre coragem, medo e o poder de aceitar quem somos.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <title>Lumen - A Heroína da Zona Sul</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-text">
+            <span>L</span><span>U</span><span>M</span><span>E</span><span>N</span>
+        </div>
+    </div>
+    
+    <!-- Scanline Effect -->
+    <div class="scanline"></div>
+    
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+    
+    <!-- Vignette -->
+    <div class="vignette"></div>
+    
+    <!-- Glow Orbs -->
+    <div class="glow-orb glow-orb-green" style="top: 20%; left: 10%; width: 300px; height: 300px;"></div>
+    <div class="glow-orb glow-orb-blue" style="top: 60%; right: 15%; width: 250px; height: 250px;"></div>
+    <div class="glow-orb glow-orb-red" style="bottom: 20%; left: 30%; width: 200px; height: 200px;"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#poderes">Poderes</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-dot active" data-section="inicio"></div>
+        <div class="progress-dot" data-section="historia"></div>
+        <div class="progress-dot" data-section="poderes"></div>
+        <div class="progress-dot" data-section="quiz"></div>
+        <div class="progress-dot" data-section="sobre"></div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="neon-green">L</span>
+                <span class="neon-red">U</span>
+                <span class="neon-blue">M</span>
+                <span class="neon-green">E</span>
+                <span class="neon-red">N</span>
+            </h1>
+            <p class="hero-subtitle neon-blue">A HEROÍNA DA ZONA SUL</p>
+            <div class="hero-image-container">
+                <img src="img_5.png" 
+                     alt="Matilda - Lumen" class="hero-image" id="hero-image">
+            </div>
+            <p class="hero-description">
+                Uma história interativa sobre coragem, medo e o poder de aceitar quem somos. 
+                Acompanhe Matilda em sua jornada pela zona sul de São Paulo.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('historia')">
+                    Começar Jornada
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('quiz')">
+                    Quiz Interativo
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Story Section 1 -->
+    <section class="story-section" id="historia">
+        <div class="section-content">
+            <div class="story-grid">
+                <div class="story-text reveal-left">
+                    <h2>O Despertar</h2>
+                    <p>
+                     Matilda, aos trinta anos, via o mundo em caixas. Trabalhando em logística, sua rotina era uma sequência de fluxos previsíveis, mas seu verdadeiro mapa mental era desenhado em código binário. Ela sonhava em ser desenvolvedora de sistemas, mas o medo do fracasso era um bug que a impedia de clicar em "compilar". A única vez que o medo sumia era sobre quatro rodas. No Parque Ibirapuera, o asfalto era um código aberto que ela podia dominar; cada manobra era uma vitória contra a inação.
+                    </p>
+                    <p>
+                        Tudo mudou quando um clarão verde-esmeralda rasgou o céu de São Paulo. Um meteorito atingiu o solo, e a energia envolveu Matilda, reescrevendo suas linhas de código genético. O medo da falha foi substituído por uma força inédita: surgiu Lumen. Com um uniforme que unia o verde da esperança, o vermelho da ação, o azul da serenidade e o preto do mistério, ela agora podia voar, teleportar e materializar pensamentos.
+
+                       Mas a atualização não foi exclusiva. Seu amigo de infância, Lennon, também foi transformado, tornando-se O Espelho, um mestre em ilusões que materializava os medos mais profundos.
+                    </p>
+                    <div class="quote">
+                        "O medo é apenas a ausência de luz. E eu sou a própria luz."
+                    </div>
+                </div>
+                <div class="story-image-container reveal-right">
+                    <img src="img_2.png" 
+                         alt="Parque Ibirapuera à noite" class="story-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Story Section 2 -->
+    <section class="story-section">
+        <div class="section-content">
+            <div class="story-grid reverse">
+                <div class="story-image-container reveal-left">
+                    <img src="img_4.png" 
+                         alt="Vila Mariana - Zona Sul" class="story-image">
+                </div>
+                <div class="story-text reveal-right">
+                    <h2>O Primeiro Desafio</h2>
+                    <p>
+                       O Espelho sabia exatamente onde atacar: o medo de Matilda de não ser boa o suficiente. No meio da batalha, ela viu a si mesma, pequena e paralisada, refletida nas distorções dele. "Você é apenas uma garota da logística!", a voz de Lennon ecoava, tentando travar o sistema dela.
+
+                       Mas então, Lumen lembrou do skate, do ritmo do Ibirapuera e da precisão técnica que sempre possuiu. "Eu sou todas as coisas!", ela gritou. Com seu poder de Materialização, ela não criou uma arma comum, mas uma ponte de energia binária sólida sobre o abismo de sua própria dúvida.
+
+                       A ponte a levou diretamente ao vilão. Ele tentou uma última cartada, mostrando-lhe o medo da rejeição, mas Matilda não vacilou.
+                    </p>
+                    <p>
+                        "Se falhar, eu recomeço. A vida é um código que se depura a cada tentativa!"
+
+Com essa afirmação, Lumen disparou uma rajada de energia focada. A luz pura não destruiu Lennon, mas estilhaçou seus espelhos de ilusão, fazendo-o desvanecer em fumaça. De volta à realidade, Matilda finalmente sentou-se diante do computador. Ela não era mais apenas uma peça na logística do mundo; ela começou a programar o primeiro código de seu próprio futuro. Afinal, a verdadeira superforça era a coragem de tentar.
+                    </p>
+                    <div class="quote">
+                        "Não é sobre não ter medo. É sobre enfrentá-lo mesmo assim."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Powers Section -->
+    <section class="story-section" id="poderes">
+        <div class="section-content">
+            <div class="text-center mb-5">
+                <h2 class="text-gradient reveal">Escolha Seu Poder</h2>
+                <p class="reveal" style="color: var(--text-secondary); margin-top: 1rem;">
+                    Cada poder representa uma qualidade de Matilda. Qual ressoa com você?
+                </p>
+            </div>
+            
+            <div class="power-selector">
+                <div class="power-card reveal" data-power="luz" onclick="selectPower(this)">
+                    <span class="power-icon">💡</span>
+                    <h3>Manipulação de Luz</h3>
+                    <p>Crie ilusões, cegue inimigos ou ilumine o caminho nas trevas.</p>
+                </div>
+                
+                <div class="power-card reveal" data-power="cura" onclick="selectPower(this)">
+                    <span class="power-icon">✨</span>
+                    <h3>Cura Luminosa</h3>
+                    <p>Restaure ferimentos físicos e emocionais com luz purificadora.</p>
+                </div>
+                
+                <div class="power-card reveal" data-power="velocidade" onclick="selectPower(this)">
+                    <span class="power-icon">⚡</span>
+                    <h3>Velocidade da Luz</h3>
+                    <p>Mova-se tão rápido que parece teleportar-se entre pontos.</p>
+                </div>
+                
+                <div class="power-card reveal" data-power="escudo" onclick="selectPower(this)">
+                    <span class="power-icon">🛡️</span>
+                    <h3>Escudo de Fótons</h3>
+                    <p>Proteja a si mesma e aos outros com barreiras de luz sólida.</p>
+                </div>
+            </div>
+            
+            <div id="power-result" class="card mt-4 hidden">
+                <h3 id="power-title"></h3>
+                <p id="power-description"></p>
+                <button class="btn btn-primary" onclick="resetPower()">Escolher Outro</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quiz Section -->
+    <section class="story-section" id="quiz">
+        <div class="section-content">
+            <div class="text-center mb-4">
+                <h2 class="text-gradient reveal">Quiz: Qual Poder Você Teria?</h2>
+                <p class="reveal" style="color: var(--text-secondary); margin-top: 1rem;">
+                    Responda 5 perguntas e descubra qual poder de Lumen combina com sua personalidade!
+                </p>
+            </div>
+            
+            <div class="quiz-container reveal" id="quiz-container">
+                <div id="quiz-start">
+                    <h3 class="quiz-question">Pronto para descobrir seu poder?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="startQuiz()">
+                            🚀 Começar Quiz
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="quiz-questions" class="hidden">
+                    <div class="quiz-progress">
+                        <div class="quiz-progress-bar" id="progress-bar"></div>
+                    </div>
+                    <p class="quiz-counter" id="question-counter">Pergunta 1 de 5</p>
+                    <h3 class="quiz-question" id="question-text"></h3>
+                    <div class="quiz-options" id="options-container"></div>
+                </div>
+                
+                <div id="quiz-result" class="hidden text-center">
+                    <div class="power-icon" id="result-icon" style="font-size: 4rem;"></div>
+                    <h3 id="result-title"></h3>
+                    <p id="result-description"></p>
+                    <div class="hero-buttons mt-3">
+                        <button class="btn btn-primary" onclick="restartQuiz()">Refazer Quiz</button>
+                        <button class="btn btn-secondary" onclick="shareResult()">Compartilhar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="story-section" id="sobre">
+        <div class="section-content">
+            <div class="story-grid">
+                <div class="story-text reveal-left">
+                    <h2>Sobre o Projeto</h2>
+                    <p>
+                        <strong>Lumen - A Heroína da Zona Sul</strong> é um projeto interativo criado 
+                        para inspirar jovens a encontrarem sua própria luz interior. Através da história 
+                        de Matilda, exploramos temas como coragem, autoconhecimento e superação.
+                    </p>
+                    <p>
+                        A zona sul de São Paulo serve como cenário para uma narrativa que mistura 
+                        elementos de ficção científica com realidades urbanas brasileiras, criando 
+                        uma experiência única e envolvente.
+                    </p>
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Criadores:</h3>
+                    <ul style="list-style: none; color: var(--text-secondary);">
+                        <li>🎨 Árlei Santos - Design e Narrativa</li>
+                        <li>💻 Marcos Santos - Desenvolvimento</li>
+                        <li>✍️ Grazielly Lacerda - Roteiro</li>
+                        <li>🎭 Kauanny Santos - Personagens</li>
+                    </ul>
+                </div>
+                <div class="card reveal-right">
+                    <h3 class="neon-green">Tecnologias Utilizadas</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">GSAP</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 1.5rem;">
+                        Este projeto foi desenvolvido com foco em acessibilidade, performance e 
+                        experiência do usuário, utilizando as melhores práticas de desenvolvimento web.
+                    </p>
+                    <div class="mt-3">
+                        <a href="#inicio" class="btn btn-primary" onclick="scrollToSection('inicio')">
+                            Voltar ao Início
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Lumen - A Heroína da Zona Sul. Todos os direitos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+            Feito com 💚 na Zona Sul de São Paulo
+        </p>
+    </footer>
+    
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
